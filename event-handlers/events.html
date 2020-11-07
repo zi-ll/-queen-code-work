@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+    <script 
+     src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <button class="hide">HIDE</button>
+        <button class="show">Double Click</button>
+        <button class="slide-up">mouseenter</button>
+        <button class="slide-down">mouseleave</button>
+        <button class="change-height">hover</button>
+    </div>
+
+    <img src="https://cdn.pixabay.com/photo/2016/02/01/20/38/barack-obama-and-bo-1174375__340.jpg">
+
+    
+</body>
+</html>
+
+<script>
+    $(".hide").click(function() {
+        $("img").hide();
+    })
+    $(".show").dblclick(function() {
+        $("img").show();
+    })
+    $(".slide-up").mouseenter(function() {
+        $("img").slideUp();
+    })
+    $(".slide-down").mouseleave(function() {
+        $("img").slideDown();
+    })
+    $(".change-height").hover(function() {
+        $("img").css("height","1000px");
+    })
+</script>

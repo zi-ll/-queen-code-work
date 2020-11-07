@@ -13,14 +13,14 @@
                 <img src="https://i.imgur.com/70uqcLG.png">
             </div>
             <div class="yard">
-                <button class="whack1">Whack Me!</button>
+                <button class="mole1">Doubleclick</button>
                 <img class="mole1" src="https://i.imgur.com/AmtqfIs.png">
             </div>
             <div class="yard">
                 <img src="https://i.imgur.com/70uqcLG.png">
             </div>
             <div class="yard">
-                <button class="whack2">Whack Me!</button>
+                <button class="moleTwo">mouse enter</button>
                 <img class="moleTwo" src="https://i.imgur.com/AmtqfIs.png">
                 </div>
             <div class="square">
@@ -36,7 +36,7 @@
                 <img src="https://i.imgur.com/70uqcLG.png">
             </div>
             <div class="yard">
-                <button class="whack3">Whack Me!</button>    
+                <button class="thirdMole">mouse leave</button>    
                 <img class="thirdMole" src="https://i.imgur.com/AmtqfIs.png">
             </div>
             <button class="reset">Reset Moles</button>
@@ -44,20 +44,22 @@
 
     </body>
 </html>
-<script>
-    $(".whack1").click(function(){
-    $(".mole1").hide();
-});
-    
-$(".whack2").click(function(){
-    $(".moleTwo").hide();
-});
-    
-$(".whack3").click(function(){
-    $(".thirdMole").hide();
-});
-    
-$("INCORRECT").click(function(){
-    $("INCORRECT").show();
-});
+    <script>
+        $(".moleTwo").mouseenter(function(){
+            $(".moleTwo").hide();
+            $(".mole1").show();
+            $(".thirdMole").show();
+        }); 
+            
+        $(".thirdMole").mouseleave(function(){
+            $(".thirdMole").hide();
+            $(".mole1").show();
+            $(".moleTwo").show();
+        });
+            
+        $("button").dblclick(function(){
+            $(".mole1").hide();
+            $(".moleTwo").show();
+            $(".thirdMole").show();
+        });
 </script>

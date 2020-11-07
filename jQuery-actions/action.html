@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Actions</title>
+    <script 
+     src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <button class="hide">HIDE</button>
+        <button class="show">SHOW</button>
+        <button class="slide-up">SLIDE UP</button>
+        <button class="slide-down">SLIDE DOWN</button>
+        <button class="toggle">TOGGLE</button>
+        <button class="slide-toggle">SLIDE TOGGLE</button>
+        <button class="fade-in">FADE IN</button>
+        <button class="fade-out">FADE OUT</button>
+    </div>
+
+    <img src="https://cdn.pixabay.com/photo/2016/02/01/20/38/barack-obama-and-bo-1174375__340.jpg">
+
+    
+</body>
+</html>
+
+<script>
+    $(".hide").click(function() {
+        $("img").hide();
+    })
+    $(".show").click(function() {
+        $("img").show();
+    })
+    $(".slide-up").click(function() {
+        $("img").slideUp();
+    })
+    $(".slide-down").click(function() {
+        $("img").slideDown();
+    })
+    $(".toggle").click(function() {
+        $("img").toggle();
+    })
+    $(".slide-toggle").click(function() {
+        $("img").slideToggle();
+    })
+    $(".fade-in").click(function() {
+        $("img").fadeIn();
+    })   
+    $(".fade-out").click(function() {
+        $("img").fadeOut();
+    
+    })
+</script>
